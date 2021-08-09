@@ -1,0 +1,12 @@
+/* css/src/main/main.css */
+
+
+/* 공통범위 디자인 */
+@import url("./pwd/a_basic_layout.css");
+/* 스마트폰 디자인 : ~ 767px  */
+@import url("./pwd/b_smartphone.css");
+/* 태블릿 : 768 ~ 1599px  */
+@import url("./pwd/c_tablet.css");
+/* pc & 노트북 : 1600px ~ */
+@import url("./pwd/d_pc.css");
+

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<!-- html/main/main.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="./ie/ie9js/ie9.min.js"></script>
+    <script src="./ie/csspie/PIE.js"></script>
+    <script src="./ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../../atomy.png" type="image/png">
+  <link rel="apple-touch-icon" href="../../atomy.png">
+  
+    <!-- font.google : noto sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- fontawesome5 -->
+    <script src="https://kit.fontawesome.com/8ecef9fad1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../fonts/fontawesome5/css/all.min.css">
+
+    <!-- css design -->
+  <link rel="stylesheet" href="../../css/base/reset.css">
+  <link rel="stylesheet" href="../../css/base/common.css">
+  <link rel="stylesheet" href="../../css/src/main/main.css">
+
+  <title>Atomy Shopping Mall</title>
+  
+</head>
+
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <div class="headBox_innerwrap container">
+        <div class="lang_area">
+          <div class="select_show">
+            <i class="fas fa-globe"></i>
+            <span>Language</span><i class="fas fa-chevron-down"></i>
+          </div>
+          <ul class="select_area">
+            <li>Korean</li>
+            <li>English</li>
+            <li>Chinese</li>
+          </ul>
+        </div>
+
+        <h1>
+          <a href="./main.html">
+            <span class="blind">atomy</span>
+            <img src="../../fonts/company/logo/logo.png" alt="atomy" class="atomy_logo">
+          </a>
+        </h1>
+
+        <div class="search_area search_container">
+          <form action="" method="get">
+            <fieldset>
+              <legend>검색</legend>
+              <label for="search" class="blind">검색하세요</label>
+              <input type="search" id="search" name="search" value="" placeholder="제품을 입력하세요" />
+              <button type="submit">
+                <i class="fas fa-search fa-2x fa_icon_search"></i>
+                <span class="blind">검색하기</span>
+              </button>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="member">
+          <a href="../membership/login.html">
+            <i class="far fa-user"></i>
+            <span>로그인(Log in)</span>
+          </a>
+          <i class="fas fa-minus"></i>
+          <a href="../membership/signup.html">
+            <i class="fas fa-sign-in-alt"></i>
+            <span>회원가입(Sign in)</span>
+          </a>
+        </div>
+      </div> 
+    </header>
+
+
+    <nav id="navBox">
+      <div class="nav_menu_mob"><i class="fas fa-list-ul"></i></div>
+      <div class="nav_innerwrap container clearfix">
+        <h2 class="blind">navigation1</h2>
+        <ul class="nav_cell">
+          <li>
+            <button type="button">
+              <span class="blind">메뉴</span>
+              <i class="fas fa-list-ul"></i>
+            </button>
+          </li>
+          <li><a href="#">애터미 홈페이지</a></li>
+          <li><a href="#">마이 오피스</a></li>
+          <li><a href="#">aza mall</a></li>
+          <li><a href="#">ch. atomy</a></li>
+        </ul>
+        
+        <div class="sf_icon_innerwrap">
+          <div class="icon_box_01">
+            <button type="button">
+              <span class="blind">장바구니</span>
+              <i class="fas fa-shopping-bag fa-2x "></i>
+            </button>
+            <span class="alarm_01"><p>2</p></span>
+          </div>
+
+          <div class="icon_box_02">
+            <button type="button">
+              <span class="blind">찜한상품</span>
+              <i class="fas fa-heart fa-2x"></i>
+            </button>
+            <span class="alarm_02"><p>1</p></span>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <section id="viewBox">
+      <h2 class="blind">광고영역1</h2>
+      <div class="viewBox_innerwrap">
+        <div class="indicator blind_wrap">
+          <ul class="clearfix">
+            <li class="act"><a href="#"><span>광고 1에대한 요약설명</span></a></li>
+            <li><a href="#"><span>광고 2에대한 요약설명</span></a></li>
+            <li><a href="#"><span>광고 3에대한 요약설명</span></a></li>
+            <li><a href="#"><span>광고 4에대한 요약설명</span></a></li>
+          </ul>
+        </div>
+
+        <div class="view_area">
+          <div class="view_guide">
+            <ul class="view_inner ad_run">
+              <li>
+                <span class="blind">광고 01</span>
+                <span class="ad_title">5월 가정의 달 마음 전하기</span>
+                <p><strong>감사</strong>와 <strong>사랑</strong>의 마음을 담아"
+                  <span><img src="../../fonts/company/ad/ad01_heart.png" alt="ad_heart" class="ad_heart_icon"></span>
+                  "를 전해보세요.</p>
+                <button type="button"><p>2021년<strong> 4월16일(금) </strong> 16시<strong> OPEN </strong></p></button>
+              </li>
+              <li><span class="blind">광고 02</span></li>
+              <li><span class="blind">광고 03</span></li>
+              <li><span class="blind">광고 04</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav id="navIconBox">
+      <div class="navIconBox_innerwrap container clearfix">
+        <h2 class="blind">navigation2</h2>
+        <ul class="navIcon_ul">
+          <li>
+            <button type="button">
+              <i class="fas fa-diagnoses fa-4x"></i>
+              <span class="navText">건강식품</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-air-freshener fa-4x"></i>
+              <span class="navText">뷰티&nbsp;&nbsp;&nbsp;</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-pump-soap fa-4x"></i>
+              <span class="navText">바디케어</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-couch fa-4x"></i>
+              <span class="navText">리빙&패션</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-utensils fa-4x"></i>
+              <span class="navText">식품</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-mobile-alt fa-4x"></i>
+              <span class="navText">기타</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <article id="bestTitleBox">
+      <h2 class="blind"></h2>
+      <div class="title_shape">
+        <span class="title_size">베스트</span>
+      </div>
+    </article>
+    <article id="bestBox" class="clearfix">
+      <ul class="bestBox_inner">
+        <li>
+          <span class="blind">베스트 제품 post</span>
+          <img src="../../fonts/company/produc/product1-hemohim.png" alt="hemohim" class="bestBox_post">
+          <a href="https://www.atomy.kr/v2/Home/Product/ProductView?GdsCode=000001">
+            <span class="blind">hemohim구매 페이지</span>
+          </a>
+        </li>
+        <li>
+          <span class="blind">베스트 제품 1</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">베스트 제품 2</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">베스트 제품 3</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">베스트 제품 4</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">베스트 제품 5</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">베스트 제품 6</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <article id="eventTitleBox">
+      <div class="event_innerwrap">
+        <div class="title_shape">
+          <span class="title_size">이벤트</span>
+        </div>
+      </div>
+    </article>
+    <article id="eventBox" class="clearfix">
+      <div class="eventBox_innerwrap">
+        <ul class="eventBox_inner">
+          <li><span class="blind">이벤트 1</span></li>
+          <li><span class="blind">이벤트 2</span></li>
+          <li><span class="blind">이벤트 3</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <article id="recommendTitleBox">
+      <div class="title_shape">
+        <span class="title_size">추천상품</span>
+      </div>
+    </article>
+    <article id="recommendBox" class="clearfix">
+      <ul class="recommendBox_inner">
+        <li>
+          <span class="blind">추천상품 1</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">추천상품 2</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">추천상품 3</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">추천상품 4</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="product_image">
+          <div class="product_info_box">
+            <div class="product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <section id="viewBox_bottom">
+      <h2 class="blind">광고영역2</h2>
+      <div class="viewBox_innerwrap_bottom">
+        <div class="view_area_bottom">
+          <div class="view_guide_bottom">
+            <ul class="view_inner_bottom ad_run">
+              <li><span class="blind">광고 01</span></li>
+              <li><span class="blind">광고 02</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article id="newTitleBox">
+      <div class="title_shape">
+        <span class="title_size">신제품</span>
+      </div>
+    </article>
+    <article id="newBox" class="clearfix">
+      <ul class="newBox_inner">
+        <li>
+          <span class="blind">신제품 1</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="new_product_image">
+          <div class="new_info_box">
+            <div class="new_product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="new_product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="new_product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">신제품 2</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="new_product_image">
+          <div class="new_info_box">
+            <div class="new_product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="new_product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="new_product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">신제품 3</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="new_product_image">
+          <div class="new_info_box">
+            <div class="new_product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="new_product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="new_product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+        <li>
+          <span class="blind">신제품 4</span>
+          <img src="../../fonts/company/produc/product2-absolute.png" alt="앱솔루트세트 이미지" class="new_product_image">
+          <div class="new_info_box">
+            <div class="new_product_title">
+              <span>앱솔루트 셀랙티브 스킨케어</span>
+            </div>
+            <div class="new_product_info">
+              <span>회원가: </span><span class="price_red">198,000</span><span> 원</span>
+            </div>
+            <div class="new_product_info">
+              <span>포인트: </span><span class="point_blue">100,000</span><span> PV</span>
+            </div>
+
+            <form action="">
+              <fieldset class="shoppingBox_btn">
+                <legend class="blind">shopping box</legend>
+                  <label for="">
+                    <button type="button"><img src="../../fonts/icon/btn/outline_remove_circle_outline_black_24dp.png" alt="minus" class="count_btn"></button>
+                    <input type="count" id="countBox" name="count" value="" placeholder="1" />
+                    <button type="button"><img src="../../fonts/icon/btn/outline_add_circle_outline_black_24dp.png" alt="plus" class="count_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_shopping_bag_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                    <button type="button"><img src="../../fonts/icon/btn/outline_favorite_border_black_24dp.png" alt="plus" class="count_btn background_btn"></button>
+                  </label>
+              </fieldset>
+            </form>
+            
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <div class="top_btn">
+      <button type="button"><i class="fas fa-arrow-up fa-2x"></i></i></button>
+    </div>
+
+    <footer id="footBox">
+      <div class="footNav_innerwrap">
+        <h2 class="blind">footer navigation</h2>
+        <ul class="footNav_container clearfix">
+          <li><a href="#">atomy <span>corp.</span></a></li>
+          <li><a href="#">atomy air</a></li>
+          <li><a href="#">atomy mobile</a></li>
+        </ul>
+      </div>
+
+      <div class="foot_logo_box1">
+        <img src="../../fonts/company/logo/flogo.png" alt="footer_logo" class="footer_logo">
+      </div>
+      
+      <div class="footBox_container1 clearfix">
+        <h3 class="blind">회사소개foot</h3>
+        <div class="foot_left_part">
+          <dl class="comp_nav">
+            <dt class="blind">오시는길 네이비게이션</dt>
+            <dd><a href="#" class="blue_link">개인정보처리방침</a></dd>
+            <dd><a href="#">회원약관</a></dd>
+            <dd><a href="#">평균후원수당공지</a></dd>
+            <dd><a href="#">상품제안하기</a></dd>
+            <dd><a href="#">오시는길</a></dd>
+          </dl>
+          <dl class="comp_box">
+            <dt class="blind">회사정보</dt>
+            <dd>
+              <span class="comp_title">애터미(주) | 대표이사 : </span>
+              <span class="comp_info">박한길, 김대현, 최승곤</span>
+            </dd>
+            <dd>
+              <span class="comp_title">통신판매업 신고 : </span>
+              <span class="comp_info">제2013-충남공주-0091호</span>
+            </dd>
+            <dd>
+              <span class="comp_title">사업자등록번호 : </span>
+              <span class="comp_info">108-81-88139</span>
+            </dd>
+            <dd>
+              <span class="comp_title">건강기능식품판매업 : </span>
+              <span class="comp_info">충청남도 공주시 제252호</span>
+            </dd>
+            <dd>
+              <span class="comp_title">주소 : </span>
+              <span class="comp_info">(32543)충청남도 공주시 백제문화로 2148-21(웅진동)</span>
+            </dd>
+            <dd>
+              <span class="comp_title_copyright">remote support | copyright atomy CO.,LTD</span>
+            </dd>
+          </dl>
+        </div>
+
+        <ul class="foot_right_part">
+          <li>
+            <i class="fas fa-phone-volume"></i>
+            <span>고객행복센터</span><a href="#">1544-8580</a>
+          </li>
+          <li><span>fax : 02-888-4802</span></li>
+          <li class="time_check">
+            <span>운영시간 :</span>
+            <span>평일 09:00 ~ 18:00</span>
+            <span>(토,일요일 및 공휴일 휴무)</span>
+          </li>
+          <li>
+            <form action="">
+              <fieldset class="qna_btn">
+                <legend class="blind">문의 mail</legend>
+                  <label for="">
+                    <button type="button"> 
+                      문의하기
+                      <i class="far fa-envelope"></i>
+                    </button>
+                  </label>
+              </fieldset>
+            </form>
+          </li>
+        </ul>
+      </div> 
+      <div class="foot_logo_box2 clearfix">
+        <img src="../../fonts/company/logo/flogo.png" alt="footer_logo" class="footer_logo">
+      </div>
+      
+      
+    </footer>
+  </div>
+
+  <!-- script -->
+  <script src="../../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../../js/jquery/jquery-ui.min.js"></script>
+  <script src="../../js/jquery/device_temp.js"></script>
+
+  <script src="../../js/src/main/main_guid.js"></script>
+  
+  <!--
+  <script src="../../js/rwd/a_laptop.js"></script>
+  <script src="../../js/rwd/b_tablet.js"></script>
+  <script src="../../js/rwd/c_smartphone.js"></script>
+  -->
+
+</body>
+
+</html>
